@@ -1,0 +1,6 @@
+ibm-watson>=4.6.0
+pandas
+flask
+flask_restful
+tqdm
+elasticsearch
