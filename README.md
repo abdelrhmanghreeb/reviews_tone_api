@@ -63,7 +63,7 @@ python3 -m unittest reviews_tone_api/tests/test.py
 ```
 ### Docker
 To generate a deployable docker image:
-- Add a valid Watson tone analyzer API key at the appropriate place in ```Dockerfile ``` (line #35)
+- Add a valid Watson tone analyzer API key at the appropriate place in ```Dockerfile ``` (line #37)
 - Build and run the Dockerimage
 ```
 sudo docker image build <image-name> .
