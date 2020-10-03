@@ -1,5 +1,5 @@
-# movies_indexer
-A basic elastic search API that uses IBM Watson's tone analyzer to index movie reviews 
+# Movie Reviews Analyzer and Indexer
+A fully working Flask API that uses IBM Watson's tone analyzer to index movie reviews to a Elastic Search.
 
 ## API Documentation
 ### 1. POST-GET '/avg_tone'
