@@ -51,19 +51,9 @@ or
 ```
 
 ## Steps to run the service
-### Unittests
-To run unittests:
-1- Make sure to add your Watson tones API key to the environemnt 
-```
-export WATSON_TONE_ANALYZER_API_KEY=<your-key>
-```
-2- Run the following command when at the directory root
-```
-python3 -m unittest reviews_tone_api/tests/test.py
-```
 ### Docker
 To generate a deployable docker image:
-- Add a valid Watson tone analyzer API key at the appropriate place in ```Dockerfile ``` (line #37)
+- Add a valid Watson tone analyzer API key at the appropriate place in ```Dockerfile ``` ([line #37](https://github.com/abdelrhmanghreeb/reviews_tone_api/blob/master/Dockerfile#L37))
 - Build and run the Dockerimage
 ```
 sudo docker image build <image-name> .
@@ -73,6 +63,16 @@ sudo docker image run -p 5000:5000 --env-file=dock.run.vars --name <image-name> 
 Example:
 ```
 curl http://0.0.0.0:5000/<endpoint>/<hotel name>
+```
+### Unittests
+To run unittests:
+1- Make sure to add your Watson tones API key to the environemnt 
+```
+export WATSON_TONE_ANALYZER_API_KEY=<your-key>
+```
+2- Run the following command when at the directory root
+```
+python3 -m unittest reviews_tone_api/tests/test.py
 ```
 ## Assumptions
 - While some entries of the data found in the file `7282_1.csv` do have `Hotels` as part of their `categories` value, they were ignored because they have other categories along side with `Hotels`. This was done for simplicity.
