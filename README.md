@@ -1,5 +1,5 @@
-# Movie Reviews Analyzer and Indexer
-A fully working Flask API that uses IBM Watson's tone analyzer to index movie reviews to a Elastic Search. Projects requirements can be found [here](https://docs.google.com/document/d/19Gd62uxdqTs5L25B-n0qY-PQ71E25c8s_1JbUWlydQ8/edit?usp=sharing)
+# Hotel Reviews Analyzer and Indexer
+A fully working Flask API that uses IBM Watson's tone analyzer to index hotel reviews to a Elastic Search. Projects requirements can be found [here](https://docs.google.com/document/d/19Gd62uxdqTs5L25B-n0qY-PQ71E25c8s_1JbUWlydQ8/edit?usp=sharing)
 
 ## API Documentation
 ### 1. POST-GET '/avg_tone'
